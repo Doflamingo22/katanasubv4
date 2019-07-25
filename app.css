@@ -76,10 +76,10 @@ a:hover{
 	color:#8f848f;
 	margin-bottom:20px
 }
-.tab .tab-content{
-	padding-top:20px;
-	text-align:justify;
-	overflow:hidden
+.tab .tab-content {
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px 0;
 }
 .tab .tab-header{
 	text-align: center;
@@ -99,14 +99,14 @@ a:hover{
 	-o-transition:all ease-in .2s;
 	transition:all .2s ease-in
 }
-.tab .tab-header li:after{
-	content: "";
+.tab .tab-header li:after {
+    content: "";
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     left: 0%;
     width: 100%;
-    height: 4px;
-    background: #0000004d;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.13);
     opacity: 0;
 }
 .tab .tab-header li.active,.tab .tab-header li:hover{
@@ -1100,20 +1100,24 @@ a:hover{
 	justify-content: center;
 }
 .post-detail .episode-container .episode-anime{
-	font-size:18px;
-	background:#6c6c6c;
-	color:#fff;
-	border-radius:5px;
-	margin:0 10px 10px;
-	cursor:pointer;
-	text-align:center
+    font-size: 18px;
+    background: #6c6c6c;
+    color: #fff;
+    width: 5%;
+    border-radius: 5px;
+    margin: 0 10px 10px;
+    cursor: pointer;
+    text-align: center;
 }
 .post-detail .episode-container .episode-anime a{
 	color:#fff;
 	display:block;
-	height:40px;
-	width:40px;
 	line-height:40px
+}
+@media (max-width:1024px){
+	.post-detail .episode-container .episode-anime{
+    width: 15%;
+}
 }
 .post-detail .episode-container .episode-anime:hover{
 	background:#000;
@@ -1124,19 +1128,19 @@ a:hover{
 .post-detail .downloads{
 	padding:5px 0
 }
-.post-detail .btn-gra{
-	padding:5px 10px;
-	color:#fff;
-	font-weight:600;
-	text-transform:uppercase;
-	font-size:14px;
-	margin:5px 10px;
-	border:none;
-	outline:none;
-	border-radius:3px;
-	-webkit-box-shadow:0 5px 30px rgba(74,67,80,.2);
-	box-shadow:0 5px 30px rgba(74,67,80,.2);
-	transition:all .2s ease-in
+.post-detail .btn-gra {
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 5px 30px rgba(74,67,80,.2);
+    box-shadow: 0px 1px 2px rgba(74,67,80,.2);
+    transition: all .2s ease-in;
 }
 .post-detail .btn-gra:hover{
 	-webkit-box-shadow:0 6px 30px rgba(74,67,80,.3);
@@ -1148,9 +1152,8 @@ a:hover{
 .post-detail .btn-gra:last-child{
 	margin-right:0
 }
-.post-detail .btn-gra.g-1{
-	background-color:#ffe53b;
-	background-image:linear-gradient(147deg,#ffe53b,#ff2525 74%)
+.post-detail .btn-gra.g-1 {
+    background-color: #D90007;
 }
 .post-detail .btn-gra.g-2{
 	background-color:#08aeea;
@@ -1160,19 +1163,21 @@ a:hover{
 	background-color:#fee140;
 	background-image:linear-gradient(90deg,#fee140,#fa709a)
 }
-.post-detail .post-detail-box{
-	background:#fff;
+.post-detail .post-detail-box {
+    background: #fff;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.28);
+    border-radius: 5px;
 }
-.post-detail .post-detail-box .post-video{
-	background:#8f848f;
-	width:100%;
-        z-index: 5;
-        position: relative;
-        padding-bottom: 56.3%;
-        height: 0;
-        width: 100%;
-	position:relative;
-	overflow:hidden
+.post-detail .post-detail-box .post-video {
+    z-index: 5;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.58);
+    padding-bottom: 56.3%;
+    height: 0;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
 }
 .post-detail .post-detail-box .post-desc {
 	text-align: center;
@@ -1195,7 +1200,7 @@ a:hover{
 	margin:0
 }
 .post-detail .post-detail-box .post-desc .post-title p{
-	margin:10px 0;
+	margin:10px 0 0;
 	color:#b4a4c7
 }
 .post-detail .post-detail-box .post-desc .post-watched{
